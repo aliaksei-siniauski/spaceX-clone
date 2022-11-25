@@ -3,7 +3,9 @@ body {
   @extend %flex;
   @extend %flex-column;
   @extend %js-content-space-between;
+  background: $dark-color;
+  color: $light-color;
+  font-family: $barlow-font;
   font-size: 1.6rem;
   line-height: 1.5;
-
 }

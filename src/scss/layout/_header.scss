@@ -1,0 +1,14 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 4rem 0
+}
+
+.header__container {
+    @extend %flex;
+    @extend %js-content-space-between;
+    @extend %al-items-center;
+}

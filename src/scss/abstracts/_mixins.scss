@@ -4,7 +4,7 @@
   @font-face {
     font-family: "#{$font-family}";
     src: url("../fonts/#{$url}.woff") format("woff"),
-      url("../fonts/#{$url}.woff2") format("woff2");
+    url("../fonts/#{$url}.woff2") format("woff2");
     font-weight: #{$weight};
     font-display: swap;
     font-style: $style;
@@ -22,7 +22,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  > * {
+
+  >* {
     flex-basis: $width;
   }
 }
@@ -32,6 +33,7 @@
     @content;
   }
 }
+
 @mixin media-tablet {
   @media (max-width: 772px) {
     @content;
