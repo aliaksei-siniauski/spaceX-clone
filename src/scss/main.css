@@ -188,7 +188,12 @@ h4 {
 
 @media (max-width: 576px) {
   .section-c .section__container {
-    top: 36%;
+    top: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .section-c .section__container {
+    top: 35%;
   }
 }
 

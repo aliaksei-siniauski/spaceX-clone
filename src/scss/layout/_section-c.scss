@@ -4,7 +4,11 @@
 
 .section-c .section__container {
     @include media-mobile {
-        top: 36%;
+        top: 50%;
+    }
+
+    @include media-mobile-small {
+        top: 35%;
     }
 }
 
