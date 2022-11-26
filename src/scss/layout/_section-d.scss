@@ -8,4 +8,8 @@
         top: 80%;
     }
 
+    @include media-mobile-small {
+        top: 69%;
+    }
+
 }

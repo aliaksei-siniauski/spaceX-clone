@@ -6,7 +6,7 @@
     justify-content: center;
     font-size: $social-size;
 
-    @include media-tablet {
+    @include media-small-desktop {
         display: block;
         text-align: center;
 
@@ -19,7 +19,7 @@
             margin-right: 1rem;
         }
 
-        @include media-tablet {
+        @include media-small-desktop {
             margin: 2rem;
         }
 
