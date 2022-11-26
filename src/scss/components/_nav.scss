@@ -1,9 +1,11 @@
 .header__nav {
     @extend %flex;
+    flex-wrap: wrap;
     @extend %al-items-center;
+    @extend %js-content-space-between;
+    width: 100%;
     margin-right: auto;
-    text-transform: uppercase;
-    gap: 31rem;}
+}
 
 .menu-list {
     @extend %flex;
@@ -14,6 +16,7 @@
 .menu-list__item {
     position: relative;
     padding-bottom: .2rem;
+    text-transform: uppercase;
 
 }
 
@@ -46,4 +49,9 @@
         @extend %transition;
 
     }
+}
+
+.menu-right {
+    justify-self: flex-end;
+    margin-right: 10px;
 }
