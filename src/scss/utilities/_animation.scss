@@ -1,0 +1,35 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(140px);
+    }
+
+    100% {
+        opacaity: 1;
+        transform: translate(0);
+    }
+}
+
+%section-animation {
+    animation-fill-mode: both;
+}
+
+@keyframes fadeBounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+
+}

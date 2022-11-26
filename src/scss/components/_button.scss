@@ -18,34 +18,3 @@
 
     }
 }
-
-.button__border {
-    & .hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
-        @extend %transition;
-        transform: translateY(100%);
-
-    }
-
-    &:hover .text {
-        color: $dark-color;
-    }
-
-    &:hover .hover {
-        transform: translateY(0);
-        @extend %transition;
-
-    }
-}
-
-.text {
-    position: relative;
-    @extend %transition;
-
-}

@@ -17,6 +17,9 @@
 
 @import "layout/header";
 @import "layout/section-a";
+@import "layout/section-b";
+@import "layout/section-c";
+@import "layout/section-d";
 
 
 /* Components */
@@ -25,9 +28,11 @@
 @import "components/nav";
 @import "components/burger";
 @import "components/button";
+@import "components/icons";
 
 
 /* Utilities */
 
 @import "utilities/container";
 @import "utilities/section";
+@import "utilities/animation";
