@@ -167,19 +167,19 @@ h4 {
 }
 
 .section-a {
-  background: url("/src/images/home/section-a.webp");
+  background: url("../images/home/section-a.webp");
 }
 
 .section-b {
-  background: url("/src/images/home/section-b.webp");
+  background: url("../images/home/section-b.webp");
 }
 
 .section-c {
-  background: url("/src/images/home/section-c.webp");
+  background: url("../images/home/section-c.webp");
 }
 
 .section-d {
-  background: url("/src/images/home/section-d.webp");
+  background: url("../images/home/section-d.webp");
 }
 
 .footer {
@@ -304,13 +304,13 @@ h4 {
 .icon__scroll {
   width: 30px;
   height: 20px;
-  background-image: url("/src/svg/scroll.svg");
+  background-image: url("../svg/scroll.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  -moz-animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
-  animation: fadeBounce 3s infinite;
+  -moz-animation: bounce 3.5s infinite;
+  -webkit-animation: bounce 3.5s infinite;
+  animation: fadeBounce 3.5s infinite;
 }
 
 /* Utilities */

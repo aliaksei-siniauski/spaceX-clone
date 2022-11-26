@@ -5,12 +5,12 @@
     &__scroll {
         width: 30px;
         height: 20px;
-        background-image: url('/src/svg/scroll.svg');
+        background-image: url('../svg/scroll.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        -moz-animation: bounce 3s infinite;
-        -webkit-animation: bounce 3s infinite;
-        animation: fadeBounce 3s infinite;
+        -moz-animation: bounce 3.5s infinite;
+        -webkit-animation: bounce 3.5s infinite;
+        animation: fadeBounce 3.5s infinite;
     }
 }
