@@ -1,0 +1,7 @@
+h2 {
+  @include font($section-title, 4.8rem, $bold);
+}
+
+h4 {
+  @include font($date-size, 2rem, $regular);
+}

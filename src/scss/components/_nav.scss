@@ -3,8 +3,7 @@
     @extend %al-items-center;
     margin-right: auto;
     text-transform: uppercase;
-    gap: 38rem;
-}
+    gap: 31rem;}
 
 .menu-list {
     @extend %flex;
@@ -20,6 +19,13 @@
 
 .menu-list__link {
     @include font($link-size, 1.4, $bold);
+    @extend %transition;
+    opacity: .9;
+
+    &:hover {
+        color: #FEFEFE;
+        opacity: 1;
+    }
 
     &:hover::after {
         transform: scaleX(1);
