@@ -4,11 +4,13 @@
 
 .section-c .section__container {
     @include media-mobile {
-        top: 50%;
+        top: 36%;
     }
 }
 
 .section-c__title {
-    max-width: 480px;
-    width: 100%;
+    @include media-tablet {
+        max-width: 480px;
+        width: 100%;
+    }
 }

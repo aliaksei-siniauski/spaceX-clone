@@ -188,13 +188,15 @@ h4 {
 
 @media (max-width: 576px) {
   .section-c .section__container {
-    top: 50%;
+    top: 36%;
   }
 }
 
-.section-c__title {
-  max-width: 480px;
-  width: 100%;
+@media (max-width: 768px) {
+  .section-c__title {
+    max-width: 480px;
+    width: 100%;
+  }
 }
 
 .section-d {
