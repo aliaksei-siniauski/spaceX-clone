@@ -236,14 +236,19 @@ h4 {
 .footer__menu-list .menu-list__item {
   display: inline-block;
 }
-@media (max-width: 576px) {
-  .footer__menu-list .menu-list__item {
-    margin-right: 1rem;
-  }
-}
 @media (max-width: 1024px) {
   .footer__menu-list .menu-list__item {
     margin: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .footer__menu-list .menu-list__item {
+    margin: 0.8rem;
+  }
+}
+@media (max-width: 375px) {
+  .footer__menu-list .menu-list__item {
+    margin: 0.1rem;
   }
 }
 .footer__menu-list .menu-list__link {
