@@ -3,4 +3,8 @@
     margin: 0 auto;
     padding-inline: 1.5rem;
 
+    @include media-small-desktop {
+        max-width: 95%;
+    }
+
 }

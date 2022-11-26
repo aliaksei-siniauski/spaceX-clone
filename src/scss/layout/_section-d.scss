@@ -1,3 +1,11 @@
 .section-d {
     background: url('/src/images/home/section-d.webp');
 }
+
+.section-d .section__container {
+
+    @include media-mobile {
+        top: 80%;
+    }
+
+}

@@ -29,19 +29,19 @@
 }
 
 @mixin media-small-desktop {
-  @media (max-width: 1090px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin media-tablet {
-  @media (max-width: 772px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
 
 @mixin media-mobile {
-  @media (max-width: 515px) {
+  @media (max-width: 576px) {
     @content;
   }
 }

@@ -1,3 +1,14 @@
 .section-c {
     background: url('/src/images/home/section-c.webp');
 }
+
+.section-c .section__container {
+    @include media-mobile {
+        top: 50%;
+    }
+}
+
+.section-c__title {
+    max-width: 480px;
+    width: 100%;
+}

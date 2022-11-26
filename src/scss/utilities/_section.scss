@@ -1,10 +1,18 @@
 .section {
     position: relative;
     height: 100vh;
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     text-transform: uppercase;
+
+
+
+    @include media-mobile {
+        height: 680px;
+        margin-bottom: 6.6rem;
+
+    }
 }
 
 .section__container {
@@ -12,12 +20,20 @@
     top: 55%;
     bottom: 15%;
 
+    @include media-mobile {
+        top: 68%
+    }
+
 }
 
 .section__inner {
     max-width: 520px;
     width: 37%;
     text-align: left;
+
+    @include media-small-desktop {
+        width: 96%;
+    }
 }
 
 
@@ -70,4 +86,8 @@
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include media-mobile {
+        bottom: -28px
+    }
 }

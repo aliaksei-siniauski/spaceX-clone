@@ -1,10 +1,18 @@
 .logo {
     display: flex;
     margin-right: 5rem;
+
+    @include media-small-desktop {
+        max-width: 150px;
+        display: inline-block;
+        margin: auto;
+    }
+
 }
 
 .header__logo-img {
     max-width: 210px;
     width: 100%;
     height: auto;
+
 }

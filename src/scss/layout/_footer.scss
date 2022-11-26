@@ -3,15 +3,31 @@
 }
 
 .footer__menu-list {
-    @extend %flex;
-    @extend %js-content-center;
-    @extend %al-items-center;
+    justify-content: center;
+    font-size: $social-size;
+
+    @include media-tablet {
+        display: block;
+        text-align: center;
+
+    }
 
     .menu-list__item {
-        font-size: $social-size;
+        display: inline-block;
+
+        @include media-mobile {
+            margin-right: 1rem;
+        }
+
+        @include media-tablet {
+            margin: 2rem;
+        }
+
     }
 
     .menu-list__link {
+        font-size: $social-size;
+
         &:hover {
             color: $hover-color;
         }
@@ -23,5 +39,10 @@
 }
 
 .copyright {
+    display: block;
     color: $thin-color;
+
+    @include media-mobile {
+        padding-bottom: .8rem;
+    }
 }

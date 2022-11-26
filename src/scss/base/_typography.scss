@@ -1,7 +1,12 @@
 h2 {
   @include font($section-title, 4.8rem, $bold);
+
+  @include media-small-desktop {
+    font-size: 3.6rem;
+  }
 }
 
 h4 {
   @include font($date-size, 2rem, $regular);
+  font-size: 1.6rem;
 }

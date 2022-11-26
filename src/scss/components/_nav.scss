@@ -4,12 +4,18 @@
     @extend %js-content-space-between;
     width: 100%;
     margin-right: auto;
+
+    @include media-small-desktop {
+        display: none;
+    }
 }
 
 .menu-list {
     @extend %flex;
     @extend %al-items-center;
     gap: 2.4rem;
+
+
 }
 
 .menu-list__item {
@@ -52,5 +58,9 @@
 
 .menu-right {
     justify-self: flex-end;
-    margin-right: 10px;
+    margin-right: 2rem;
+
+    @include media-small-desktop {
+        display: none;
+    }
 }
