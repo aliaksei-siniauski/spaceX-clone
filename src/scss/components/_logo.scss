@@ -1,6 +1,7 @@
 .logo {
     display: flex;
     margin-right: 5rem;
+    z-index: 1;
 
     @include media-small-desktop {
         max-width: 150px;

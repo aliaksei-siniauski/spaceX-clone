@@ -4,6 +4,7 @@
 
 .footer__menu-list {
     justify-content: center;
+    align-items: baseline;
     font-size: $social-size;
 
     @include media-small-desktop {
@@ -20,7 +21,7 @@
         }
 
         @include media-mobile {
-            margin: .8rem;
+            margin: .4rem;
         }
 
         @include media-mobile-small {

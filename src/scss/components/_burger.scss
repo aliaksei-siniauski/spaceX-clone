@@ -1,11 +1,15 @@
 .burger {
     @extend %flex;
     @extend %flex-column;
-    @extend %cursor;
-    padding-top: .9rem;
-    width: 30px;
-    height: 30px;
+    @extend %al-items-center;
+    padding-top: .4rem;
+    width: 20px;
+    height: 20px;
     border: 0;
+    user-select: none;
+    @extend %cursor;
+    z-index: 100;
+
 
 }
 
@@ -16,7 +20,26 @@
     background: $light-color;
     border-radius: 0.1rem;
 
+
+
     &:not(:last-child) {
         margin: 0 0 0.3rem 0;
     }
+}
+
+.open {
+    @extend %transition;
+
+}
+
+.open .burger__item {
+    transform: rotate(-45deg) translate(-8px, 0px);
+}
+
+.open .burger__item:nth-child(2) {
+    opacity: 0;
+}
+
+.open .burger__item:last-child {
+    transform: rotate(45deg) translate(-7px, 1px);
 }
