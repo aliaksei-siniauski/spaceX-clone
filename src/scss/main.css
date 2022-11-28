@@ -30,7 +30,7 @@
   text-transform: uppercase;
 }
 
-.button__border:hover .hover, .button__border .hover, .mobile-menu__link, .button__border, .open, .menu-list__link::after, .menu-list__link {
+.button__border:hover .hover, .button__border .hover, .hidden, .intro__content, .mobile-menu__link, .button__border, .open, .menu-list__link::after, .menu-list__link {
   transition: 0.5s ease-in-out;
 }
 
@@ -504,9 +504,13 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translateY(-50px);
   text-align: center;
   animation: fadeIn 2s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .intro__title {
@@ -633,7 +637,7 @@ h4 {
 
 .scroll-arrow {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }

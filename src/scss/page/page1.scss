@@ -8,9 +8,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translateY(-50px);
     text-align: center;
-    animation: fadeIn 2s ease-in-out
+    animation: fadeIn 2s ease-in-out;
+    @extend %transition;
+
+}
+
+.hidden {
+    @extend %transition;
+    opacity: 0;
 }
 
 .intro__title {

@@ -67,7 +67,6 @@
         background-color: #fff;
         @extend %transition;
         transform: translateY(100%);
-
     }
 
     &:hover .text {
@@ -77,13 +76,12 @@
     &:hover .hover {
         transform: translateY(0);
         @extend %transition;
-
     }
 }
 
 .scroll-arrow {
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 
