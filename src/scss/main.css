@@ -2,15 +2,15 @@
 /* Fonts  */
 /* Fonts family */
 /* Fonts */
-.mobile-menu__list, .mobile-menu, .burger, .menu-list, .header__nav, .header__container, body {
+.counter__item, .counter__contain, .mobile-menu__list, .mobile-menu, .burger, .menu-list, .header__nav, .header__container, body {
   display: flex;
 }
 
-.mobile-menu__list, .burger, body {
+.counter__item, .mobile-menu__list, .burger, body {
   flex-direction: column;
 }
 
-.header__nav, .header__container, body {
+.counter__contain, .header__nav, .header__container, body {
   justify-content: space-between;
 }
 
@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-.burger, .menu-list, .header__nav, .header__container {
+.counter__item, .burger, .menu-list, .header__nav, .header__container {
   align-items: center;
 }
 
@@ -26,7 +26,7 @@
   cursor: pointer;
 }
 
-.mobile-menu__item, .menu-list__item {
+.counter__label, .mobile-menu__item, .menu-list__item {
   text-transform: uppercase;
 }
 
@@ -158,6 +158,13 @@ article {
     scroll-behavior: auto !important;
   }
 }
+h1 {
+  font-size: 10rem;
+  line-height: 8.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
 h2 {
   font-size: 4.8rem;
   line-height: 4.8rem;
@@ -487,6 +494,63 @@ h4 {
   }
 }
 
+/* Page */
+.intro {
+  position: relative;
+  background: url("../images/page-1/falcon9-main.webp");
+}
+
+.intro__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.intro__title {
+  padding-bottom: 2rem;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.intro__text {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  animation: fadeInUp 1s ease-in-out 0.2s;
+}
+
+/* Counter Section */
+.counter {
+  padding: 7.5rem 0;
+}
+
+.counter__container {
+  max-width: 960px;
+  width: 90%;
+  height: auto;
+}
+
+.counter__number {
+  display: block;
+  font-size: 14rem;
+  line-height: 14rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.counter__label {
+  display: block;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Utilities */
 .container {
   /*     max-width: 1300px; 
@@ -589,7 +653,15 @@ h4 {
     transform: translate(0);
   }
 }
-.section__subtitle, .section__title, .section__button {
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacaity: 1;
+  }
+}
+.intro__text, .section__subtitle, .section__title, .section__button {
   animation-fill-mode: both;
 }
 

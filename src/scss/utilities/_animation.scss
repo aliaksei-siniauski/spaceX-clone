@@ -10,6 +10,16 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacaity: 1;
+    }
+}
+
 %section-animation {
     animation-fill-mode: both;
 }

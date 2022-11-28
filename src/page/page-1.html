@@ -6,22 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>SpaceX</title>
-    <link rel="shortcut icon" href="src/svg/spacex.ico" type="image/x-icon">
-    <link rel="stylesheet" href="src/scss/main.css" />
+    <title>Falcon-9</title>
+    <link rel="shortcut icon" href="/src/svg/spacex.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../scss/main.css" />
 </head>
 
 <body>
     <div id="overlay"></div>
     <header class="header">
         <div class="container header__container">
-            <a href="index.html" class="logo header__logo">
-                <img class="header__logo-img" src="src/images/logo.png" alt="logo">
+            <a href="../../index.html" class="logo header__logo">
+                <img class="header__logo-img" src="../images/logo.png" alt="logo">
             </a>
             <nav class="navigation header__nav">
                 <ul class="menu-list">
-                    <li class="menu-list__item"><a class="menu-list__link" href="/src/page/page-1.html">Falcon 9</a>
-                    </li>
+                    <li class="menu-list__item"><a class="menu-list__link" href="page-1.html">Falcon 9</a></li>
                     <li class="menu-list__item"><a class="menu-list__link" href="#">Falcon Heavy</a></li>
                     <li class="menu-list__item"><a class="menu-list__link" href="#">Dragon</a></li>
                     <li class="menu-list__item"><a class="menu-list__link" href="#">Starship</a></li>
@@ -61,75 +60,32 @@
         </div> <!-- close container -->
     </header>
     <main>
-        <section class="section section-a">
-            <div class="container section__container">
-                <div class="section__inner">
-                    <h4 class="section__subtitle">Upcoming Launch</h4>
-                    <h2 class="section__title">CRS-26 Mission</h2>
-                    <div class="section__button">
-                        <a class="button button__border" href="#">
-                            <div class="hover"></div>
-                            <span class="text">Rewatch</span>
-                        </a>
-                    </div>
-                </div> <!-- close section__inner -->
+        <section class="section intro">
+            <div class="container intro__container">
+                <div class="intro__content">
+                    <h1 class="intro__title">Falcon 9</h1>
+                    <p class="intro__text">First Orbital Class Rocket capable of reflight</p>
+                </div> <!-- close intro__content -->
             </div> <!-- close container -->
-            <div class="scroll-arrow">
-                <span class="icon icon__scroll"></span>
-            </div>
         </section>
-        <section class="section section-b">
-            <div class="container section__container">
-                <div class="section__inner">
-                    <h4 class="section__subtitle">Recent launch
-                    </h4>
-                    <h2 class="section__title">Eutelsat 10B Mission
-                    </h2>
-                    <div class="section__button">
-                        <a class="button button__border" href="#">
-                            <div class="hover"></div>
-                            <span class="text">Rewatch</span>
-                        </a>
-                    </div>
-                </div> <!-- close section__inner -->
+        <section class="section counter">
+            <div class="container counter__container">
+                <div class="counter__contain">
+                    <div class="counter__item">
+                        <span class="counter__number" data-count="186">0</span>
+                        <span class="counter__label">Total Launches</span>
+                    </div> <!-- close counter-item -->
+                    <div class="counter__item">
+                        <span class="counter__number" data-count="144">0</span>
+                        <span class="counter__label">Total Landings</span>
+                    </div> <!-- close counter-item -->
+                    <div class="counter__item">
+                        <span class="counter__number" data-count="123">0</span>
+                        <span class="counter__label">Total Reflights</span>
+                    </div> <!-- close counter-item -->
+                </div> <!-- close counter-contain -->
             </div> <!-- close container -->
-            <div class="scroll-arrow">
-                <span class="icon icon__scroll"></span>
-            </div>
-        </section>
-        <section class="section section-c">
-            <div class="container section__container">
-                <div class="section__inner">
-                    <h2 class="section__title section-c__title">Starship Selected by NASA to Support Sustained Lunar
-                        Exploration</h2>
-                    <div class="section__button">
-                        <a class="button button__border" href="#">
-                            <div class="hover"></div>
-                            <span class="text">Learn more</span>
-                        </a>
-                    </div>
-                </div> <!-- close section__inner -->
-            </div> <!-- close container -->
-            <div class="scroll-arrow">
-                <span class="icon icon__scroll"></span>
-            </div>
-        </section>
-        <section class="section section-d">
-            <div class="container section__container">
-                <div class="section__inner">
-                    <h2 class="section__title">Starship Update</h2>
-                    <div class="section__button">
-                        <a class="button button__border" href="#">
-                            <div class="hover"></div>
-                            <span class="text">Learn more</span>
-                        </a>
-                    </div>
-                </div> <!-- close section__inner -->
-            </div> <!-- close container -->
-            <div class="scroll-arrow">
-                <span class="icon icon__scroll"></span>
-            </div>
-        </section>
+        </section> <!-- section -->
     </main>
     <footer class="footer">
         <div class="container footer__container">
@@ -161,7 +117,7 @@
             </ul>
         </div>
     </footer>
-    <script type="module" src="src/index.js"></script>
+    <script type="module" src="../index.js"></script>
 </body>
 
 </html>
